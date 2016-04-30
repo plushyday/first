@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FONTS</title>
+    <style type="text/css">
+    body{background: #F8F8FF;}
+      #mainFont {font-family: 'Kurale', serif; margin:0;}  
+      ul{font-family: 'Bad Script', cursive; font-weight: bold; color: #696969;}
+      
+      h1 {background: #DCDCDC; padding: 25px; }
+     h3 {padding-left: 20px;}
+        li {
+    list-style-type: none; /* Убираем маркеры у списка */
+    font-size:large;
+           }
+           li:before{
+               content: "•";
+               color: #708090;
+               font-size: 22px;
+           }
+           #under
+           {
+               background:#838B8B;
+               border-bottom-left-radius: 40px;
+               border-bottom-right-radius: 10px;
+               font-size:150%; padding: 15px; 
+           }
+           #above{
+               background: #DCDCDF;
+               border-radius: 10px 10px 10px 40px;
+                         }
+    </style>
+</head>
+<body>
+   <link href='https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   
+   <h1 id="mainFont">Операторы сравнения и логические значения</h1>
+  <div id="under"> <p id="mainFont">Многие операторы сравнения знакомы нам из математики:</p>
+<div id="above">
+    <ul><li> Больше/меньше: a &gt; b, a &lt; b.</li>
+    <li> Больше/меньше или равно: a &gt;= b, a &lt;= b.</li>
+   <li> Равно a == b. Для сравнения используется два символа равенства '='. Один символ a = b означал бы присваивание.</li>
+   <li> «Не равно». В математике он пишется как &ne;, в JavaScript – знак равенства с восклицательным знаком перед ним !=.</li></ul></div>
+
+
+<h3 id=mainFont>Логические значения</h3>
+
+<p id=mainFont>Как и другие операторы, сравнение возвращает значение. Это значение имеет логический тип.
+
+Существует всего два логических значения:</p>
+<div id="above">
+<ul><li>true – имеет смысл «да», «верно», «истина».</li>
+<li>false – означает «нет», «неверно», «ложь».</li></ul></div>
+<h3 id=mainFont>Сравнение строк</h3>
+
+<p id=mainFont>Строки сравниваются побуквенно.</p>
+<p id=mainFont>Если строка состоит из нескольких букв, то сравнение осуществляется как в телефонной книжке или в словаре. Сначала сравниваются первые буквы, потом вторые, и так далее, пока одна не будет больше другой.
+Иными словами, больше – та строка, которая в телефонной книге была бы на большей странице.
+
+</p><p id=mainFont>Например:</p>
+<div id=above><ul><li>Если первая буква первой строки больше – значит первая строка больше, независимо от остальных символов.</li>
+
+<li>Если одинаковы – сравнение идёт дальше. Здесь оно дойдёт до третьей буквы.</li>
+
+<li>При этом любая буква больше отсутствия буквы.</li><ul></div>
+</div></body>
+</html>
